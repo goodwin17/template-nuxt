@@ -1,0 +1,8 @@
+@use 'sass:color';
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@import 'normalize' layer(normalize);
+@import 'reset' layer(reset);
+
+@layer normalize, reset, primevue;
