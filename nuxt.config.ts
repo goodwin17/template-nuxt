@@ -1,6 +1,6 @@
 import { definePreset } from '@primevue/themes';
 import Aura from '@primevue/themes/aura';
-import defaultTheme from '@/themes/default';
+import defaultTheme from './themes/default';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
             },
         ],
     },
-    css: ['assets/styles/main.scss'],
+    css: ['./assets/styles/main.scss'],
     modules: ['@nuxt/fonts', '@pinia/nuxt', '@primevue/nuxt-module'],
     primevue: {
         options: {
